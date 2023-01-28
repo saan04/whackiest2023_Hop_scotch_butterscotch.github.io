@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Find my Teacher</title>
+        <link rel="stylesheet" href="findmyteacher.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rock Salt">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+        <script src="findmyteacher.js"></script>
+        <script src="findmyteacher.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <h1>Find my Teacher</h1>
+            <img src="sun.png" alt="sunicon" width="40" height="40" class="icon" id="icon">
+        </header>
+        <main>
+        <div class="content">
+            <h2>Tired of searching for your teachers' in an around Ramaiah's campus?</h2>
+            <h3> Search no further!</h3>
+            <p>Find my Teacher is the perfect solution for students looking to easily locate and contact their teachers. <br><br>Whether you're new to campus and unfamiliar with your teachers' locations or simply looking for a more efficient way to stay in touch, our webpage makes it easy for you to find the information you need. <br><br> <span>Connecting with teachers has never been simpler!</span></p>
+            <div class="search">
+                <input type="text" id="teacher" class="searchbox" autocomplete="off" placeholder="Search by teacher's name...">
+                <button onclick="staffroom()">Search</button>
+            </div>
+           
+        </div>
+        <div class="imagecontainer">
+        <img src="teacher1.gif" alt="teacher student gif" width="880" height="660" class="teacherpic" id="teacherpic">
+    </div>
+    </main>
+
+        
+        <script>
+            var icon=document.getElementById("icon");
+             icon.onclick=function(){
+                document.body.classList.toggle("dark-theme");
+                if(document.body.classList.contains("dark-theme")){
+                    icon.src="moon.png";
+                    
+                }
+                else{
+                    icon.src="sun.png";
+                }
+             }
+             function checkTime() {
+                const hour = new Date().getHours();
+
+                if (hour < 6 || hour > 18) {
+                    icon.src="moon.png";
+                    document.body.classList.add("dark-theme");
+                } else {
+                    icon.src="sun.png";
+                    document.body.classList.remove("dark-theme");
+                }
+            }
+
+        checkTime();
+            setInterval(checkTime, 60000); // check time every minute
+
+        </script>
+       
+    </body>
+</html>

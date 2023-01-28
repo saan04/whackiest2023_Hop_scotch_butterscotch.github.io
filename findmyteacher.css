@@ -1,0 +1,231 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#c2e8fe;
+    --secondary-color:#b5fedc;
+    --text-color: black;
+    /* --box-color: rgba(0,0,0,0.4); */
+    --header-color:rgba(0, 0, 0);
+    --header-text:white;
+    --sub-text: rgb(6, 85, 85);
+    --my-blend-mode: multiply;
+}
+
+.dark-theme{
+    --primary-color:#000000;
+    --secondary-color:#000000;
+    --text-color: white;
+    /* --box-color: whitesmoke; */
+    --header-color:rgb(255, 255, 255);
+    --header-text:black;
+    --sub-text: rgb(23, 220, 220);
+    --my-blend-mode:none;
+    /* --img-background: transparent; */
+}
+
+body{
+    margin: 0;
+    /* background-color: #1e2233; */
+    background-image: linear-gradient(315deg, var(--primary-color) 0%, var(--secondary-color) 74%);
+}
+
+h1{
+    text-align: center;
+    font-family: Rock Salt;
+    font-size: large;
+    margin: 0;
+    padding: 1rem;
+    color: var(--header-text);
+    text-transform: uppercase;
+}
+
+header{
+    background-color: var(--header-color);
+    margin: 0;
+    /* color:var(--header-text); */
+}
+
+.icon{
+    position: relative;
+    float: right;
+    top: -55px;
+    right: 20px;
+    /* z-index: 5; */
+  }
+
+
+/* .imagecontainer::before{
+    background-color: var(--primary-color); */
+  /* mix-blend-mode: multiply; */
+  /* mix-blend-mode: var(--my-blend-mode);
+} */
+
+.teacherpic{
+    
+    mix-blend-mode: var(--my-blend-mode);
+    position: relative;
+    top: 50px;
+    
+ }
+
+ main{
+    display: flex;
+    /* gap: 2rem; */
+    height: 100vh;
+ }
+
+ .content{
+    margin-left:5rem;
+   margin-top: 10rem;
+   color: var(--text-color);
+ }
+
+ .content h2{
+    font-family: Ubuntu;
+    font-size: 2rem;
+    
+ }
+
+ .content h3{
+    font-family: Ubuntu;
+    font-size: 1.5rem;
+    color: var(--sub-text);
+ }
+
+ .content p{
+    font-size: 1.2rem;
+ }
+
+span{
+color: var(--sub-text);
+font-weight: 600;
+ }
+
+ a{
+    text-decoration: none;
+    color: white;
+ }
+button{
+    
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-radius: 1.7rem;
+    color: white;
+    border-width: 1px;
+    border-color: var(--sub-text);
+    background-color: rgb(25, 167, 167) ;
+    transition: background-color 0.5s ease;
+ }
+
+button:hover{
+    background-color: var(--sub-text);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#c2e8fe;
+    --secondary-color:#b5fedc;
+    --text-color: black;
+    --box-color: rgba(0,0,0,0.4);
+    --header-color:rgb(0, 0, 0);
+    --header-text:white;
+    --textbox-color: rgba(255, 255, 255, 0.4);
+    --textbox-color-focus: rgba(255, 255, 255, 0.6);
+    --sub-text: rgb(6, 85, 85);
+}
+
+.dark-theme{
+    --primary-color:#000000;
+    --secondary-color:#000000;
+    --text-color: white;
+    --box-color: whitesmoke;
+    --header-color:rgb(255, 255, 255);
+    --header-text:black;
+    --textbox-color: rgba(253, 253, 253, 0.641);
+    --sub-text: rgb(23, 220, 220);
+    --textbox-color-focus: whitesmoke;
+}
+
+
+body{
+    margin: 0;
+    /* background-color: #1e2233; */
+    background-image: linear-gradient(315deg, var(--primary-color) 0%, var(--secondary-color) 74%);
+}
+
+header{
+    background-color:var(--header-color);
+    color:var(--header-text);
+}
+
+h1{
+    text-align: center;
+    font-family: Rock Salt;
+    font-size: large;
+    margin: 0;
+    padding: 1rem;
+    color: var(--header-text);
+    text-transform: uppercase;
+}
+
+.icon{
+    position: relative;
+    float: right;
+    top: -55px;
+    right: 20px;
+    /* z-index: 5; */
+  }
+.searchbox{
+    width: 450px;
+    max-width: 980px;
+    padding: 0.8rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    background-color: var(--textbox-color);
+    border-radius: 20px 0 20px 0;
+    border-bottom: 3.5px solid rgb(6, 85, 85);
+    margin: 4rem;
+}
+
+.searchbox:focus{
+    background-color: var(--textbox-color-focus);
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    height: 50px;
+    width: 128.5px;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-radius: 1.7rem;
+    color: white;
+    border-width: 1px;
+    border-color: rgb(6, 85, 85);
+    position: relative;
+    top:60px;
+    background-color: rgb(25, 167, 167) ;
+    transition: background-color 0.5s ease;
+    
+}
+
+button:hover{
+    background-color: var(--sub-text);
+}
+
+.content-box{
+    max-width: 75%;
+    color:var(--text-color);
+}
+
+
+ 

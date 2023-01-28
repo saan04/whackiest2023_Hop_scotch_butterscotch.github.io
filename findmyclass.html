@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Find my class</title>
+        <link rel="stylesheet" href="findmyclass.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rock Salt">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+        <script src="findmyclass.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Find my Class</h1>
+        </header>
+        <main>
+            <div class="search">
+                <input type="text" id="usertext" class="searchbox" autocomplete="off" placeholder="Enter Classroom No...." id="search-input">
+                <button onclick="floored()">Search</button>
+            </div>
+            <img src="college2.png" alt="collegepic" usemap="#workmap" id="image">
+            <map name="workmap">
+                <area shape="poly" coords="743,269,811,459,925,460,1032,277,934,277" alt="apex" onclick="displayTextBox('Apex block', 'content for apex block')" class="bounding-box" id="area1">
+                <area shape="poly" coords="753,368,18,427,51,677,745,555" alt="esb" onclick="displayTextBox('ESB block', 'content for ESB block')" class="bounding-box" id="area2">
+                <area shape="poly" coords="1008,350,1282,360,1305,646,988,550" alt="des" onclick="displayTextBox('DES block', 'content for DES block')" class="bounding-box" id="area3">
+              </map>
+              <div id="text-box">
+                <button id="close-btn" onclick="closeTextBox()">x</button>
+                <h3 id="text-box-header"></h3>
+                <p id="text-box-content">This is the text box that will appear when the clickable area is clicked</p>
+            </div>
+             
+        </main>
+       
+
+    </body>
+</html>

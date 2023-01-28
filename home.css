@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#c2e8fe;
+    --secondary-color:#b5fedc;
+    --text-color: black;
+    --box-color: rgba(0,0,0,0.4);
+    --header-color:rgb(0, 0, 0);
+    --header-text:white;
+}
+
+.dark-theme{
+    --primary-color:#000000;
+    --secondary-color:#000000;
+    --text-color: white;
+    --box-color: whitesmoke;
+    --header-color:rgb(255, 255, 255);
+    --header-text:black;
+}
+
+body{
+    margin: 0;
+    /* background-color: #1e2233; */
+    background-image: linear-gradient(315deg, var(--primary-color) 0%, var(--secondary-color) 74%);
+}
+
+h1{
+    text-align: center;
+    font-family: Rock Salt;
+    font-size: large;
+    margin: 0;
+    padding: 1rem;
+    color: var(--header-text);
+    text-transform: uppercase;
+}
+
+header{
+    background-color: var(--header-color);
+    margin: 0;
+    /* display: flex;
+    gap: 70rem; */
+   
+}
+
+.icon{
+   position: relative;
+   float: right;
+   top: -55px;
+   right: 20px;
+ }
+ 
+
+.logos-container{
+    min-height: 100vh;
+    margin: 0 auto 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 800px;
+    
+    align-items: center;
+}
+
+.cards{
+    /* mix-blend-mode: multiply; */
+    margin: 1rem;
+    padding: 1rem;
+    background-image: linear-gradient(315deg, var(--primary-color) 0%, var(--secondary-color) 74%);
+    /* background-color: white; */
+    border-radius: 2rem;
+    width: 335px;
+    height: 335px;  
+    box-shadow: 0 0 1rem var(--box-color);
+}
+
+.cards:hover{
+    box-shadow: 0 0 2rem var(--box-color);
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.cards img{
+    position: relative;
+    top: -50px;
+    left: 40px;
+    /* border-radius: 50%;
+    border: 10px solid white; */
+    width: 75%;
+    height: 75%;
+    
+}
+
+.cards h2{
+    position: relative;
+    top: -40px;
+    text-align:center;
+    font-family: "Comfortaa";
+    font-weight: 800;
+    font-size: 1.9rem;
+    padding-top: 2rem;
+}
