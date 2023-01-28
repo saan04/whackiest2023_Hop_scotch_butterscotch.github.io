@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <title>login</title>
@@ -19,7 +20,7 @@
                 <input type="date" id="dob" name="dob" class="dob" >
                 <form action="home.html">
                     <div class="search">
-            
+
                         <button onclick="ttsy()">Search</button>
                     </div>
                 </form>
